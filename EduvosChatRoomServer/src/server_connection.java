@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class server_connection {
     int port;
-    Vector<user> m_users = new Vector<>();
+    static Vector<user> m_users = new Vector<>();
 
     server_connection() {}
 
@@ -26,4 +26,17 @@ public class server_connection {
         }
 
     }
+
+
+    public static void broadcast(String message, user sender) {
+        for (user _user : m_users) {
+            if (_user != sender) {
+                _user.send_massage(message);
+            }
+        }
+    }
+
+
+
+
 }
