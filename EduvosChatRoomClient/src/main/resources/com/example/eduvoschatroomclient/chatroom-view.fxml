@@ -15,17 +15,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="600.0" style="-fx-background-color: #698EA9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eduvoschatroomclient.ChatroomController">
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="600.0" style="-fx-background-color: #698EA9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eduvoschatroomclient.ChatroomController">
    <children>
-      <HBox alignment="CENTER" prefHeight="474.0" prefWidth="618.0">
+      <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
          <children>
-            <GridPane prefHeight="474.0" prefWidth="624.0">
+            <GridPane alignment="CENTER" maxWidth="-Infinity" prefHeight="474.0" prefWidth="624.0">
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.199951171875" minWidth="10.0" prefWidth="201.60003662109375" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.5999633789063" minWidth="10.0" prefWidth="397.5999633789063" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="201.60003662109375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="397.5999633789063" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="473.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <GridPane prefWidth="194.0" style="-fx-background-color: #276E8C;">
