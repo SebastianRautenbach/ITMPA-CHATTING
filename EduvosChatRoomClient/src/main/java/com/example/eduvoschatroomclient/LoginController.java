@@ -5,6 +5,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class LoginController {
     //components
     @FXML
@@ -35,15 +37,21 @@ public class LoginController {
 
 
     @FXML
-    protected void onJoinClick() {
+    protected void onJoinClick() throws IOException {
         //var
         String userName, userIP;
+        boolean canJoin=true;
 
         userName=txtName.getText();
         userIP=txtIP.getText();
 
         isNameEmpty(userName);
         isIPEmpty(userIP);
+
+        if (canJoin==true){
+            System.out.println("Success");
+            ClientLogin.setRoot("chatroom-view");
+        }
 
     }
 }
