@@ -27,7 +27,12 @@ public class ClientLogin extends Application {
 
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ClientLogin.class.getResource(fxml + ".fxml"));
-        return fxmlLoader.load();
+        try {
+            return fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
     }//loadFXML
 
     public static void main(String[] args) {
