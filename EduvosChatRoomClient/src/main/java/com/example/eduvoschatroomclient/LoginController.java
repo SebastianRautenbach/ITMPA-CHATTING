@@ -1,10 +1,12 @@
+//Handles interaction with the login UI
+
 package com.example.eduvoschatroomclient;
 
+//imports
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
 import java.io.IOException;
 
 public class LoginController {
@@ -23,8 +25,8 @@ public class LoginController {
             lblName.setVisible(true);
         }else {
             lblName.setVisible(false);
-        }
-    }
+        }//if
+    }//isNameEmpty
 
     @FXML
     void isIPEmpty(String string){
@@ -32,8 +34,8 @@ public class LoginController {
             lblIP.setVisible(true);
         }else{
             lblIP.setVisible(false);
-        }
-    }
+        }//if
+    }//isIPEmpty
 
 
     @FXML
@@ -51,7 +53,7 @@ public class LoginController {
         if (canJoin==true){
             System.out.println("Success");
             ClientLogin.setRoot("chatroom-view");
-        }
+        }//if
 
-    }
+    }//onJoinClick
 }

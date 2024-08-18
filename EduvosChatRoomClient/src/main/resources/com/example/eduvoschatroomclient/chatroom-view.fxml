@@ -60,6 +60,9 @@
                                  <font>
                                     <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
                                  </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </Button>
                            </children>
                         </GridPane>
@@ -83,6 +86,9 @@
                                  <font>
                                     <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
                                  </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </Button>
                            </children>
                         </GridPane>
@@ -104,10 +110,13 @@
                   <RowConstraints fillHeight="false" maxHeight="54.79997558593749" minHeight="10.0" prefHeight="54.79997558593749" valignment="CENTER" vgrow="NEVER" />
                </rowConstraints>
                <children>
-                  <TextField alignment="CENTER" prefHeight="32.0" prefWidth="133.0" promptText="Find Person..." style="-fx-background-color: #C0CFD5; -fx-prompt-text-fill: #002A64;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <TextField fx:id="edtFindPerson" alignment="CENTER" onKeyTyped="#inputTyped" prefHeight="32.0" prefWidth="133.0" promptText="Find Person..." style="-fx-background-color: #C0CFD5; -fx-prompt-text-fill: #002A64;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </TextField>
                   <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnLogoutClicked" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #FAB400;" text="Log Out" textFill="#276e8c" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                      <cursor>
@@ -122,6 +131,9 @@
                      <columns>
                         <TableColumn prefWidth="199.20001220703125" style="-fx-background-color: #276E8C; -fx-text-fill: #FFFFFF;" text="People" />
                      </columns>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </TableView>
                   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #296680;" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
                </children>
