@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="473.0" prefWidth="600.0" style="-fx-background-color: #698EA9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eduvoschatroomclient.ChatroomController">
+   <children>
+      <GridPane alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1000.0" prefWidth="2000.0" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="200.0" minWidth="120.0" prefWidth="120.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="150.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" minWidth="-Infinity" prefHeight="474.0" prefWidth="404.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <children>
+                  <GridPane style="-fx-background-color: #698EA9;" HBox.hgrow="ALWAYS">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="384.1999755859375" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints fillHeight="false" maxHeight="138.59998168945313" minHeight="10.0" prefHeight="68.39999103844166" valignment="TOP" vgrow="NEVER" />
+                        <RowConstraints fillHeight="false" maxHeight="138.59998168945313" minHeight="6.599981689453131" prefHeight="6.599981689453131" valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="322.3999938964844" valignment="CENTER" vgrow="ALWAYS" />
+                        <RowConstraints fillHeight="false" maxHeight="81.60001220703123" minHeight="6.599981689453131" prefHeight="6.599981689453131" valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints fillHeight="false" maxHeight="81.60001220703123" minHeight="10.0" prefHeight="54.79997558593749" valignment="CENTER" vgrow="NEVER" />
+                     </rowConstraints>
+                     <children>
+                        <ListView prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #698EA9;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS" />
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="30.0" prefWidth="45.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="306.3999877929688" />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="88.80001220703127" minWidth="10.0" prefWidth="88.80001220703127" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints fillHeight="false" maxHeight="138.60001220703126" minHeight="10.0" prefHeight="68.39999103844166" valignment="CENTER" vgrow="NEVER" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" text="Select a chat" textAlignment="CENTER" textFill="#002a64" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Extra Bold" size="35.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" style="-fx-background-color: #FAB400;" text="X" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="LEFT">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <GridPane alignment="CENTER" GridPane.rowIndex="4">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="-Infinity" minWidth="30.0" prefWidth="45.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="314.8000244140625" />
+                              <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="5.0" prefWidth="35.5999755859375" />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="88.80001220703127" minWidth="10.0" prefWidth="88.80001220703127" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+                           </rowConstraints>
+                           <children>
+                              <TextField prefHeight="36.0" prefWidth="310.0" promptText="Enter a message..." style="-fx-background-color: #BFCBD3; -fx-prompt-text-fill: #002A64;" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+                                 </font>
+                              </TextField>
+                              <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="27.0" style="-fx-background-color: #FAB400;" text="&gt;" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="LEFT">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #618199;" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #618199;" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+            <GridPane prefWidth="209.0" style="-fx-background-color: #276E8C;" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+               <columnConstraints>
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints fillHeight="false" maxHeight="138.60001220703126" minHeight="10.0" prefHeight="68.39999103844166" valignment="TOP" vgrow="NEVER" />
+                  <RowConstraints fillHeight="false" maxHeight="138.60001220703126" minHeight="6.599981689453131" prefHeight="6.599981689453131" valignment="CENTER" vgrow="NEVER" />
+                  <RowConstraints maxHeight="800.0" minHeight="10.0" prefHeight="319.3999877929688" valignment="CENTER" vgrow="ALWAYS" />
+                  <RowConstraints fillHeight="false" maxHeight="138.60001220703126" minHeight="6.599981689453131" prefHeight="6.599981689453131" valignment="CENTER" vgrow="NEVER" />
+                  <RowConstraints fillHeight="false" maxHeight="54.79997558593749" minHeight="10.0" prefHeight="54.79997558593749" valignment="CENTER" vgrow="NEVER" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="edtFindChat" alignment="CENTER" onKeyTyped="#inputTyped" prefHeight="32.0" prefWidth="133.0" promptText="Find Chat..." style="-fx-background-color: #C0CFD5; -fx-prompt-text-fill: #002A64;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnLogoutClicked" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #FAB400;" text="Log Out" textFill="#276e8c" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #296680;" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.vgrow="NEVER" />
+                  <TableView prefHeight="336.0" prefWidth="154.0" style="-fx-background-color: #276E8C; -fx-text-fill: #FFFFFF;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn prefWidth="199.20001220703125" style="-fx-background-color: #276E8C; -fx-text-fill: #FFFFFF;" text="Chats" />
+                     </columns>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TableView>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #296680;" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.vgrow="NEVER" />
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
